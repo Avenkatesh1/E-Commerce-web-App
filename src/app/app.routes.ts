@@ -3,11 +3,12 @@ import { HomeComponent } from './Pages/home/home.component';
 import { LoginComponent } from './Pages/login/login.component';
 import { ProductsComponent } from './Pages/products/products.component';
 import { RegisterComponent } from './Pages/register/register.component';
+import { ContactComponent } from './Pages/contact/contact.component';
 
 export const routes: Routes = [
     {
         path:"",
-        redirectTo:"/Register",
+        redirectTo:"/contact",
         pathMatch:"full"
     },
     {
@@ -25,5 +26,9 @@ export const routes: Routes = [
     {
         path:"Register",
         component:RegisterComponent
+    },
+    {
+        path:"contact",
+        component:ContactComponent
     }
 ];
